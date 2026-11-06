@@ -474,15 +474,11 @@ p:last-child { margin-bottom: 0; }
 @media (min-width: 700px) { .team-grid--3 { grid-template-columns: repeat(3, 1fr); } }
 .team-leads { display: grid; gap: 16px; margin-bottom: 16px; }
 @media (min-width: 900px) { .team-leads { grid-template-columns: repeat(2, 1fr); } }
-.team-card--lead { padding: 24px; display: grid; gap: 16px; align-content: start; }
+.team-card--lead { padding: 24px; display: grid; gap: 16px; align-items: start; height: 100%; box-sizing: border-box; }
 @media (min-width: 520px) { .team-card--lead { grid-template-columns: 104px 1fr; gap: 20px; } }
 .team-card--lead .avatar { width: 104px; height: 104px; margin-bottom: 0; }
 .team-card--lead h3 { font-size: 1.15rem; }
-.team-card--lead p { font-size: .95rem; color: var(--ink, inherit); margin-bottom: 10px; }
-.team-card--lead p.team-wins__label { font-size: .86rem; font-weight: 600; color: var(--muted); margin: 4px 0 6px; }
-.team-wins { margin: 0; padding-left: 18px; display: grid; gap: 6px; }
-.team-wins li { font-size: .88rem; color: var(--muted); line-height: 1.45; }
-.team-wins li::marker { color: var(--blue-ink); }
+.team-card--lead p { font-size: .95rem; color: var(--ink-soft, var(--muted)); line-height: 1.6; margin: 0; }
 
 /* --------------------------------------------------------------- forms */
 .field { display: grid; gap: 6px; margin-bottom: 16px; }
